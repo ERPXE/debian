@@ -1,0 +1,14 @@
+MENU BEGIN DEBIANINST
+MENU LABEL ^Debian 6.0.5 (squeeze)
+# ------====> Include Menu Settings <====------
+MENU INCLUDE er/menuinc/header.module
+
+# ------====> Set Specific Page Settings <====------
+MENU BACKGROUND er/plugins/debian/debian.png
+
+MENU INCLUDE er/plugins/debian/i386/debianmain.menu
+MENU INCLUDE er/plugins/debian/x86_64/debianmain.menu
+
+# ------====> Back <====------
+MENU INCLUDE er/menu/shared/menu-back.module
+MENU END

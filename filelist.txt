@@ -1,0 +1,9 @@
+.:
+debianmain.menu
+debian.menu
+debian.png
+filelist.txt
+initrd64.img
+initrd.img
+vmlinuz
+vmlinuz64
