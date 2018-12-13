@@ -2,7 +2,7 @@ LABEL DEBIANINSTALL32OL
 MENU LABEL ^Debian x32 - Internet Install
 KERNEL er/plugins/debian/i386/linux
 INITRD er/plugins/debian/i386/initrd.gz
-APPEND vga=788
+APPEND
 TEXT HELP
                  Internet Install Debian x32.
 ENDTEXT
