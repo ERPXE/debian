@@ -1,0 +1,34 @@
+# ------------------------------------------------
+# debianfullde.menu
+MENU BEGIN DEBIANFULLDE
+MENU TITLE Debian Desktop Enviroment x32
+MENU LABEL ^Debian Desktop Enviroment x32
+# ------------------------------------------------
+
+
+LABEL DEBIANGNOME64
+MENU LABEL ^Debian GNOME x32 - Internet Install
+KERNEL er/plugins/debian/i386/linux
+INITRD er/plugins/debian/i386/initrd.gz
+APPEND desktop=gnome vga=788 --- quiet
+TEXT HELP
+                 Internet Install Debian x32 with GNOME.
+ENDTEXT
+LABEL DEBIANKDE64
+MENU LABEL ^Debian KDE x32 - Internet Install
+KERNEL er/plugins/debian/i386/linux
+INITRD er/plugins/debian/i386/initrd.gz
+APPEND desktop=kde vga=788 --- quiet
+TEXT HELP
+                 Internet Install Debian x32 with KDE.
+ENDTEXT
+LABEL DEBIANLXDE64
+MENU LABEL ^Debian LXDE x32 - Internet Install
+KERNEL er/plugins/debian/i386/linux
+INITRD er/plugins/debian/i386/initrd.gz
+APPEND desktop=lxde vga=788 --- quiet
+TEXT HELP
+                 Internet Install Debian x32 with LXDE.
+ENDTEXT
+MENU INCLUDE er/menu/shared/menu-back.module
+MENU END

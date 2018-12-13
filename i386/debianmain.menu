@@ -2,7 +2,24 @@ LABEL DEBIANINSTALL32OL
 MENU LABEL ^Debian x32 - Internet Install
 KERNEL er/plugins/debian/i386/linux
 INITRD er/plugins/debian/i386/initrd.gz
-APPEND
+APPEND vga=788 --- quiet
 TEXT HELP
                  Internet Install Debian x32.
 ENDTEXT
+LABEL DEBIANINSTALLADV32OL
+MENU LABEL ^Debian x32 - Advanced Internet Install
+KERNEL er/plugins/debian/i386/linux
+INITRD er/plugins/debian/i386/initrd.gz
+APPEND priority=low vga=788 --- quiet
+TEXT HELP
+                 Internet Advanced Install Debian x32.
+ENDTEXT
+LABEL DEBIANRESCUE64OL
+MENU LABEL ^Debian x32 - Rescue Mode
+KERNEL er/plugins/debian/i386/linux
+INITRD er/plugins/debian/i386/initrd.gz
+APPEND vga=788 rescue/enable=true --- quiet
+TEXT HELP
+                 Rescue Mode Debian x32.
+ENDTEXT
+MENU INCLUDE er/plugins/debian/i386/debianfullde.menu
