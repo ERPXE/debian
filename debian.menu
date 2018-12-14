@@ -4,7 +4,7 @@ MENU LABEL ^Debian 9.6.0 (stretch)
 MENU BACKGROUND er/plugins/debian/debian.png
 
 MENU INCLUDE er/plugins/debian/i386/debianmain.menu
-MENU INCLUDE er/plugins/debian/x86_64/debianmain.menu
+MENU INCLUDE er/plugins/debian/amd64/debianmain.menu
 
 # ------====> Back <====------
 MENU INCLUDE er/menu/shared/menu-back.module

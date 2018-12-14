@@ -1,0 +1,25 @@
+LABEL DEBIANINSTALL64OL
+MENU LABEL ^Debian 64bits - Internet Install
+KERNEL er/plugins/debian/amd64/linux
+INITRD er/plugins/debian/amd64/initrd.gz
+APPEND vga=788 --- quiet
+TEXT HELP
+                 Internet Install Debian 64bits.
+ENDTEXT
+LABEL DEBIANINSTALLADV64OL
+MENU LABEL ^Debian 64bits - Advanced Internet Install
+KERNEL er/plugins/debian/amd64/linux
+INITRD er/plugins/debian/amd64/initrd.gz
+APPEND priority=low vga=788 --- quiet
+TEXT HELP
+                 Internet Advanced Install Debian 64bits.
+ENDTEXT
+LABEL DEBIANRESCUE64OL
+MENU LABEL ^Debian 64bits - Rescue Mode
+KERNEL er/plugins/debian/amd64/linux
+INITRD er/plugins/debian/amd64/initrd.gz
+APPEND vga=788 rescue/enable=true --- quiet
+TEXT HELP
+                 Rescue Mode Debian 64bits.
+ENDTEXT
+MENU INCLUDE er/plugins/debian/amd64/debianfullde.menu

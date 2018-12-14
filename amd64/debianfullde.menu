@@ -1,0 +1,34 @@
+# ------------------------------------------------
+# debianfullde.menu
+MENU BEGIN DEBIANFULLDE
+MENU TITLE Debian Desktop Enviroment 64bits
+MENU LABEL ^Debian Desktop Enviroment 64bits
+# ------------------------------------------------
+
+
+LABEL DEBIANGNOME64
+MENU LABEL ^Debian GNOME 64bits - Internet Install
+KERNEL er/plugins/debian/amd64/linux
+INITRD er/plugins/debian/amd64/initrd.gz
+APPEND desktop=gnome vga=788 --- quiet
+TEXT HELP
+                 Internet Install Debian 64bits with GNOME.
+ENDTEXT
+LABEL DEBIANKDE64
+MENU LABEL ^Debian KDE 64bits - Internet Install
+KERNEL er/plugins/debian/amd64/linux
+INITRD er/plugins/debian/amd64/initrd.gz
+APPEND desktop=kde vga=788 --- quiet
+TEXT HELP
+                 Internet Install Debian 64bits with KDE.
+ENDTEXT
+LABEL DEBIANLXDE64
+MENU LABEL ^Debian LXDE 64bits - Internet Install
+KERNEL er/plugins/debian/amd64/linux
+INITRD er/plugins/debian/amd64/initrd.gz
+APPEND desktop=lxde vga=788 --- quiet
+TEXT HELP
+                 Internet Install Debian 64bits with LXDE.
+ENDTEXT
+MENU INCLUDE er/menu/shared/menu-back.module
+MENU END
