@@ -3,7 +3,7 @@ debianmain.menu
 debian.menu
 debian.png
 filelist.txt
-initrd64.img
-initrd.img
-vmlinuz
-vmlinuz64
+i386/initrd.img
+amd64/initrd.img
+i386/vmlinuz
+amd64/vmlinuz

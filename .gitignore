@@ -1,0 +1,4 @@
+i386/linux
+i386/initrd.gz
+amd64/linux
+amd64/initrd.gz

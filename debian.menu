@@ -1,10 +1,10 @@
 MENU BEGIN DEBIANINST
-MENU TITLE Debian 6.0.5 (squeeze)
-MENU LABEL ^Debian 6.0.5 (squeeze)
+MENU TITLE Debian 9.6.0 (stretch)
+MENU LABEL ^Debian 9.6.0 (stretch)
 MENU BACKGROUND er/plugins/debian/debian.png
 
 MENU INCLUDE er/plugins/debian/i386/debianmain.menu
-MENU INCLUDE er/plugins/debian/x86_64/debianmain.menu
+MENU INCLUDE er/plugins/debian/amd64/debianmain.menu
 
 # ------====> Back <====------
 MENU INCLUDE er/menu/shared/menu-back.module

@@ -1,8 +1,0 @@
-LABEL DEBIANINSTALL64OL
-MENU LABEL ^Debian x64 - Internet Install
-KERNEL er/plugins/debian/x86_64/linux
-INITRD er/plugins/debian/x86_64/initrd.gz
-APPEND vga=788
-TEXT HELP
-                 Internet Install Debian x64.
-ENDTEXT
